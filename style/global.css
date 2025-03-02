@@ -45,3 +45,9 @@
     --body-xs: 500 .75rem var(--open-sans);
 }
 
+body{
+    display: grid;
+    place-content: center;
+    background: var(--shape-background);
+}
+

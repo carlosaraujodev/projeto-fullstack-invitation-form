@@ -1,0 +1,46 @@
+#app{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1.25rem;
+    height: 100vh;
+    grid-template-columns: 25rem 53.75rem;
+    padding: 1.25rem;
+
+}
+
+aside{
+    background: url(../assets/Background.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: .75rem;
+    padding: 2rem;
+
+    & img{
+        height: 3rem;
+        width: auto;
+        margin-bottom: 1rem;
+    }
+
+    & h1{
+        font: var(--logo);
+        color: #FF598B;
+        margin-bottom: .25rem;
+    }
+
+    & h2{
+        font: var(--body-md);
+        color: var(--text-heading);
+    }
+}
+
+main{
+    background: var(--shape-body);
+    padding: 5rem 8.125rem;
+    border-radius: 1.25rem;
+
+    & h3{
+        font: var(--heading-md);
+        color: var(--text-heading);
+        margin-bottom: 2.5rem;
+    }
+}

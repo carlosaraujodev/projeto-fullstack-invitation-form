@@ -22,6 +22,53 @@
         </aside>
         <main>
             <h3>Crie seu convite</h3>
+            <form action="POST" enctype="multipart/form-data">
+                <fieldset class="event">
+                    <legend>
+                        <img src="./assets/icons/calendar.svg" alt="ícone de calendário">
+                        Sobre o evento
+                    </legend>
+                    <div class="input-wrapper">
+                        <label for="title">Título</label>
+                        <input type="text" id="title" name="title" placeholder="Nome do evento">
+                    </div>
+                    <div class="flex">
+                        <div class="input-wrapper">
+                            <label for="start">Início</label>
+                            <input type="datetime" id="start" name="start" placeholder="DD/MM/AAAA, --:--">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="end">Fim</label>
+                            <input type="datetime" id="end" name="end" placeholder="DD/MM/AAAA, --:--">
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="input-wrapper">
+                            <label for="kind">Tipo</label>
+                            <div class="radio-wrapper">
+                                <div class="radio-inner">
+                                    <div class="radio-image"></div>
+                                    <input type="radio" name="event-kind" id="in-person" value="in-person">
+                                    <label for="event-kind">Presencial</label>
+                                </div>
+                                <div class="radio-inner">
+                                    <div class="radio-image"></div>
+                                    <input type="radio" name="event-kind" id="online" value="online">
+                                    <label for="event-kind">Online</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="local">Local</label>
+                            <input type="text" id="local" name="local" placeholder="Link ou endereço">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="description">Descrição</label>
+                            <input type="text" name="description" id="description" placeholder="Escreva sobre os detalhes do evento">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
         </main>
     </div>
 </body>

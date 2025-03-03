@@ -1,0 +1,36 @@
+@import url(./fields/index.css);
+
+
+form{
+    display: grid;
+}
+
+fieldset{
+    display: grid;
+    gap: 1rem;
+    border: none;
+}
+
+legend{
+    display: flex;
+    gap: .75rem;
+    font: var(--heading-sm);
+    color: var(--text-heading);
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    & img{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+}
+
+.input-wrapper{
+    display: grid;
+    gap: 1rem;
+
+    & label{
+        font: var(--body-xs);
+        color: var(--text-body);
+    }
+}

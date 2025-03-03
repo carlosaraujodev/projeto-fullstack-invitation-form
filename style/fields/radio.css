@@ -1,0 +1,57 @@
+.radio-wrapper {
+    position: relative;
+    justify-content: space-between;
+    padding: .25rem;
+}
+
+.radio-inner {
+    align-self: center;
+    width: 50%;
+    justify-content: center;
+    padding: 10px 18px;
+
+    & input,
+    & input:focus,
+    & input:hover {
+        all: unset;
+        position: absolute;
+        inset: 0;
+    }
+
+    & .in-person{
+        background-image: url(../../assets/icons/building-2.svg);
+        height: 1rem;
+        width: 1rem;
+        background-size: cover;
+    }
+
+    & .online{
+        background-image: url(../../assets/icons/video.svg);
+        height: 1rem;
+        width: 1rem;
+        background-size: cover;
+    }
+
+    
+}
+
+.radio-inner:has(:checked) {
+    background-color: var(--shape-button);
+    border-radius: 5px;
+    /* outline: 1px solid var(--brand-light); */
+    font-weight: 600;
+
+    &:has(:checked) .in-person{
+        background-image: url(../../assets/icons/building-2-checked.svg);
+        height: 1rem;
+        width: 1rem;
+        background-size: cover;
+    }
+
+    &:has(:checked) .online{
+        background-image: url(../../assets/icons/video-2.svg);
+        height: 1rem;
+        width: 1rem;
+        background-size: cover;
+    }
+}

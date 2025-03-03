@@ -45,14 +45,14 @@
                     <div class="flex">
                         <div class="input-wrapper">
                             <label for="kind">Tipo</label>
-                            <div class="radio-wrapper">
-                                <div class="radio-inner">
-                                    <div class="radio-image"></div>
-                                    <input type="radio" name="event-kind" id="in-person" value="in-person">
+                            <div class="radio-wrapper flex">
+                                <div class="radio-inner flex">
+                                    <div class="radio-image in-person"></div>
+                                    <input type="radio" name="event-kind" id="in-person" value="in-person" checked>
                                     <label for="event-kind">Presencial</label>
                                 </div>
-                                <div class="radio-inner">
-                                    <div class="radio-image"></div>
+                                <div class="radio-inner flex">
+                                    <div class="radio-image online"></div>
                                     <input type="radio" name="event-kind" id="online" value="online">
                                     <label for="event-kind">Online</label>
                                 </div>
@@ -62,10 +62,12 @@
                             <label for="local">Local</label>
                             <input type="text" id="local" name="local" placeholder="Link ou endereço">
                         </div>
-                        <div class="input-wrapper">
-                            <label for="description">Descrição</label>
-                            <input type="text" name="description" id="description" placeholder="Escreva sobre os detalhes do evento">
-                        </div>
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <label for="description">Descrição</label>
+                        <textarea  name="description" id="description"
+                            placeholder="Escreva sobre os detalhes do evento"></textarea>
                     </div>
                 </fieldset>
             </form>

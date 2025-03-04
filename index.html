@@ -30,16 +30,16 @@
                     </legend>
                     <div class="input-wrapper">
                         <label for="title">Título</label>
-                        <input type="text" id="title" name="title" placeholder="Nome do evento">
+                        <input type="text" id="title" name="title" placeholder="Nome do evento" required>
                     </div>
                     <div class="flex">
                         <div class="input-wrapper">
                             <label for="start">Início</label>
-                            <input type="datetime" id="start" name="start" placeholder="DD/MM/AAAA, --:--">
+                            <input type="datetime" id="start" name="start" placeholder="DD/MM/AAAA, --:--" required>
                         </div>
                         <div class="input-wrapper">
                             <label for="end">Fim</label>
-                            <input type="datetime" id="end" name="end" placeholder="DD/MM/AAAA, --:--">
+                            <input type="datetime" id="end" name="end" placeholder="DD/MM/AAAA, --:--" required>
                         </div>
                     </div>
                     <div class="flex">
@@ -60,7 +60,7 @@
                         </div>
                         <div class="input-wrapper">
                             <label for="local">Local</label>
-                            <input type="text" id="local" name="local" placeholder="Link ou endereço">
+                            <input type="text" id="local" name="local" placeholder="Link ou endereço" required>
                         </div>
                     </div>
 
@@ -190,17 +190,17 @@
 
                     <div class="input-wrapper">
                         <label for="name">
-                            <input type="text" name="name" id="name" placeholder="Nome completo">
+                            <input type="text" name="name" id="name" placeholder="Nome completo" required>
                         </label>
                     </div>
                     <div class="flex">
                         <div class="input-wrapper">
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+                            <input type="email" name="email" id="email" placeholder="exemplo@email.com" required>
                         </div>
                         <div class="input-wrapper">
                             <label for="phone">Telefone</label>
-                            <input type="tel" name="phone" id="id" placeholder="(99) 99999-9999 ">
+                            <input type="tel" name="phone" id="id" placeholder="(99) 99999-9999" required>
                         </div>
                     </div>
                 </fieldset>
@@ -218,6 +218,10 @@
                         <label for="sms-update">Aceito receber atualizações e promoções por SMS</label>
                     </div>
                 </fieldset>
+                <button type="submit">
+                    <img src="./assets/icons/ticket.svg" alt="ícone de ticket">
+                    Gerar convite
+                </button>
             </form>
         </main>
     </div>

@@ -7,7 +7,12 @@
     border-radius: 999px;
 
     &:has(:checked){
-        border: 2px solid var(--brand-light);
+
+        outline: 2px solid var(--brand-light);
+
+        &:has(input:focus){
+            outline: 2px solid var(--brand-light);
+        }
     }
 
     & input {

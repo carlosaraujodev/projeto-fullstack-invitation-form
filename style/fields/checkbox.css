@@ -1,9 +1,5 @@
 .style {
     position: relative;
-
-    
-    
-
     input {
         all: unset;
         position: relative;
@@ -52,8 +48,6 @@
         
     }
 
-
-
     .switch-toggle {
         display: flex;
         position: absolute;
@@ -67,6 +61,40 @@
     }
 }
 
-&::after{
-    content: "Claro";
+.checks{
+    display: grid;
+    gap: .5rem;
+
+    .input-wrapper{
+        display: flex;
+
+        input{
+            all: unset;
+            width: 1rem;
+            height: 1rem;
+            background: var(--input-base);
+            border-radius: .25rem;  
+            border: 1px solid var(--input-stroke);
+            
+            &:checked{
+                background-image: url(../../assets/icons/check.svg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                outline: 1px solid var(--brand-light);   
+            }
+
+            &:focus{
+                outline: 1px solid var(--brand-light);   
+            }
+        }
+    }
+
+    &::before{
+        position: relative;
+        content: "";
+        height: 1px ;
+        width: 100%;
+        background-color: var(--input-stroke);
+        margin-bottom: 2.5rem;
+    }
 }

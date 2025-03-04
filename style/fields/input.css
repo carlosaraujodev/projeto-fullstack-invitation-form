@@ -5,7 +5,7 @@ input, textarea, .radio-wrapper{
     padding: 1rem;
     border-radius: .5rem;
     color: var(--text-body);
-
+    width: 100%;
     &:focus{
         outline: 2px solid var(--brand-light);
     }

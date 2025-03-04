@@ -10,6 +10,10 @@
     border-radius: .5rem;
     width: fit-content;
 
+    &:has(input:focus){
+        outline: 2px solid var(--brand-light);
+    }
+
     input[type="file"] {
         all: unset;
         position: absolute;

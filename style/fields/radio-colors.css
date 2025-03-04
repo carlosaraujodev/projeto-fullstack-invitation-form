@@ -6,11 +6,11 @@
     background-color: var(--shape-button);
     border-radius: 999px;
 
-    &:has(:checked){
+    &:has(:checked) {
 
         outline: 2px solid var(--brand-light);
 
-        &:has(input:focus){
+        &:has(input:focus) {
             outline: 2px solid var(--brand-light);
         }
     }
@@ -23,51 +23,53 @@
         border-radius: 999px;
         outline: none;
 
-        &:checked, &:focus {
+        &:checked,
+        &:focus {
             outline: none;
         }
     }
 
-    #brand-light{
+    #brand-light {
         background: var(--brand-light);
     }
 
-    #navy{
+    #navy {
         background: var(--navy);
     }
 
-    #purple{
+    #purple {
         background: var(--purple);
     }
 
-    #fuschia{
+    #fuschia {
         background: var(--fuschia);
     }
 
-    #pink{
+    #pink {
         background: var(--pink);
     }
 
-    #orange{
+    #orange {
         background: var(--orange);
     }
 
-    #danger{
+    #danger {
         background: var(--danger);
     }
 
-    #yellow{
+    #yellow {
         background: var(--yellow);
     }
 
-    #lime{
+    #lime {
         background: var(--lime);
     }
-    #green{
+
+    #green {
         background: var(--green);
     }
 
-    #cyan{
+    #cyan {
         background: var(--cyan);
     }
 }

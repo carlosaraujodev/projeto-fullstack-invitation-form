@@ -1,0 +1,72 @@
+.style {
+    position: relative;
+
+    
+    
+
+    input {
+        all: unset;
+        position: relative;
+        inset: 0;
+        position: relative;
+        width: 4rem;
+        height: 2rem;
+        background-color: var(--input-base);
+        border-radius: 999px;
+        border: 2px solid var(--input-stroke);
+
+        &::after{
+            display: block;
+            position: absolute;
+            content: "Escuro";
+            font: var(--body-sm);
+            color: var(--text-heading);
+            left: 100%;
+            top: .5rem;
+            margin-left: .5rem;
+        }
+    
+    }
+
+    input:checked::after{
+        display: block;
+        position: absolute;
+        content: "Claro";
+        font: var(--body-sm);
+        color: var(--text-heading);
+        left: 100%;
+        top: .5rem;
+        margin-left: .5rem;
+    }
+
+    
+    &:has(input:checked) .switch-toggle{
+        position: absolute;
+        left:2.375rem;
+        background: var(--text-heading);
+    }
+    
+    input:checked {
+        background: var(--brand-light);   
+
+        
+    }
+
+
+
+    .switch-toggle {
+        display: flex;
+        position: absolute;
+        left: .4rem;
+        top: .35rem;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 999px;
+        background: var(--input-stroke);
+        
+    }
+}
+
+&::after{
+    content: "Claro";
+}

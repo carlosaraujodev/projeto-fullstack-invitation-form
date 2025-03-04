@@ -1,4 +1,4 @@
-button{
+button {
     all: unset;
     display: flex;
     align-items: center;
@@ -9,10 +9,13 @@ button{
     border-radius: .5rem;
     cursor: pointer;
     width: fit-content;
-    
+
 
     font: var(--body-md);
     font-weight: 600;
     color: var(--text-heading);
 
+    &:focus {
+        outline: 2px solid var(--brand-light);
+    }
 }

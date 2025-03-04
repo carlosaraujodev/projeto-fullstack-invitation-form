@@ -44,4 +44,19 @@ main{
         color: var(--text-heading);
         margin-bottom: 2.5rem;
     }
+
+    &::-webkit-scrollbar{
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background: var(--brand-light);
+        border-radius: .5rem;   
+    }
+
+    &::-webkit-scrollbar-track{
+        background: var(--shape-body);
+        border-radius: 0 .75rem .75rem 0;
+    }
 }
+

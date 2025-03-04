@@ -14,6 +14,7 @@ aside{
     background-position: center;
     border-radius: .75rem;
     padding: 2rem;
+    overflow: hidden;
 
     & img{
         height: 3rem;
@@ -37,7 +38,7 @@ main{
     background: var(--shape-body);
     padding: 5rem 8.125rem;
     border-radius: 1.25rem;
-
+    overflow-y: scroll;
     & h3{
         font: var(--heading-md);
         color: var(--text-heading);

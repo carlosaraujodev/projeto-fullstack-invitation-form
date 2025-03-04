@@ -1,0 +1,19 @@
+.input-file {
+    background: var(--shape-button);
+    position: relative;
+    display: inline-flex;
+    max-width: fit-content;
+    gap: .5rem;
+    align-items: center;
+    font-weight: 600;
+    padding: .75rem;
+    border-radius: .5rem;
+    width: fit-content;
+
+    input[type="file"] {
+        all: unset;
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+    }
+}

@@ -48,12 +48,12 @@
                             <div class="radio-wrapper flex">
                                 <div class="radio-inner flex">
                                     <div class="radio-image in-person"></div>
-                                    <input type="radio" name="event-kind" id="in-person" value="in-person" checked>
+                                    <input type="radio" name="kind" id="in-person" value="in-person" checked >
                                     <label for="event-kind">Presencial</label>
                                 </div>
                                 <div class="radio-inner flex">
                                     <div class="radio-image online"></div>
-                                    <input type="radio" name="event-kind" id="online" value="online">
+                                    <input type="radio" name="kind" id="online" value="online">
                                     <label for="event-kind">Online</label>
                                 </div>
                             </div>
@@ -63,12 +63,55 @@
                             <input type="text" id="local" name="local" placeholder="Link ou endereço">
                         </div>
                     </div>
-                    
+
                     <div class="input-wrapper">
                         <label for="description">Descrição</label>
-                        <textarea  name="description" id="description"
+                        <textarea name="description" id="description"
                             placeholder="Escreva sobre os detalhes do evento"></textarea>
                     </div>
+                </fieldset>
+                <fieldset class="customization">
+                    <legend>
+                        <img src="./assets/icons/paintbrush-vertical.svg" alt="ícone de pincel">
+                        Personalização</legend>
+                        <div class="input-wrapper">
+                            <label for="main-color">Cor principal</label>
+                            <div class="color-inner flex">
+                                <div class="color">
+                                    <input type="radio" name="main-color" id="brand-light" value="brand-light">
+                                </div>
+                                <div class="color">
+                                    <input type="radio" name="main-color" id="navy" value="navy">
+                                </div>
+                                <div class="color">
+                                    <input type="radio" name="main-color" id="purple" value="purple">
+                                </div>
+                                <div class="color">
+                                    <input type="radio" name="main-color" id="fuschia" value="fuschia">
+                                </div>
+                                <div class="color">
+                                    <input type="radio" name="main-color" id="pink" value="pink">
+                                </div>
+                                <div class="color">
+                                    <input type="radio" name="main-color" id="danger" value="danger">
+                                </div>
+                                <div class="color">
+                                    <input type="radio" name="main-color" id="orange" value="orange">
+                                </div>
+                                <div class="color">
+                                    <input type="radio" name="main-color" id="yellow" value="yellow">
+                                </div>
+                                <div class="color">
+                                    <input type="radio" name="main-color" id="lime" value="lime">
+                                </div>
+                                <div class="color">
+                                    <input type="radio" name="main-color" id="green" value="green">
+                                </div>
+                                <div class="color">
+                                    <input type="radio" name="main-color" id="cyan" value="cyan">
+                                </div>
+                            </div>
+                        </div>
                 </fieldset>
             </form>
         </main>

@@ -1,0 +1,68 @@
+.color {
+    display: grid;
+    place-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: var(--shape-button);
+    border-radius: 999px;
+
+    &:has(:checked){
+        border: 2px solid var(--brand-light);
+    }
+
+    & input {
+        all: initial;
+        inset: initial;
+        height: 1.75rem;
+        width: 1.75rem;
+        border-radius: 999px;
+        outline: none;
+
+        &:checked, &:focus {
+            outline: none;
+        }
+    }
+
+    #brand-light{
+        background: var(--brand-light);
+    }
+
+    #navy{
+        background: var(--navy);
+    }
+
+    #purple{
+        background: var(--purple);
+    }
+
+    #fuschia{
+        background: var(--fuschia);
+    }
+
+    #pink{
+        background: var(--pink);
+    }
+
+    #orange{
+        background: var(--orange);
+    }
+
+    #danger{
+        background: var(--danger);
+    }
+
+    #yellow{
+        background: var(--yellow);
+    }
+
+    #lime{
+        background: var(--lime);
+    }
+    #green{
+        background: var(--green);
+    }
+
+    #cyan{
+        background: var(--cyan);
+    }
+}
